@@ -8,7 +8,8 @@ _etmc.push(['setOrgId', '7275555']);
 _etmc.push(['trackPageView', { 'item' : 'watches-aquaracer', 'category' : 'Watches',  'subcategory' : 'AQUARACER' }]);
 
 function User(Email){
-_etmc.push(["setUserInfo", {
+	alert(Email);
+	_etmc.push(["setUserInfo", {
     "email": Email,
 		"details": {
 			"Last name": "Petitguyot",
@@ -18,6 +19,8 @@ _etmc.push(["setUserInfo", {
 			"Language": "FR",
 		}
 	}]);
+	_etmc.push(["trackPageView"]);
+	return false;
 }
 
 </script>
