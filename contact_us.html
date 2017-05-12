@@ -5,18 +5,20 @@
 <script type='text/javascript'>
 _etmc.push(['setOrgId', '7275555']);
 
+_etmc.push(['trackPageView', { 'item' : 'watches-aquaracer', 'category' : 'Watches',  'subcategory' : 'AQUARACER' }]);
+
+function User(Email){
 _etmc.push(["setUserInfo", {
-    "email": "lpetitguyot2@yopmail.com",
+    "email": Email,
 		"details": {
 			"Last name": "Petitguyot",
 			"First name": "Laurent",
-			"Email address": "lpetitguyot2@yopmail.com",
+			"Email address": Email,
 			"Country": "France",
 			"Language": "FR",
 		}
 	}]);
-	
-_etmc.push(['trackPageView', { 'item' : 'watches-aquaracer', 'category' : 'Watches',  'subcategory' : 'AQUARACER' }]);
+}
 
 </script>
 
@@ -34,10 +36,10 @@ _etmc.push(['trackPageView', { 'item' : 'watches-aquaracer', 'category' : 'Watch
 <!--  NOTE: Please add the following <FORM> element to your page.             -->
 <!--  ----------------------------------------------------------------------  -->
 
-<form action="https://cs83.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8" method="POST">
+<form action="https://cs83.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8" onsubmit=User(document.getElementById('email').value) method="POST">
 
 <input type=hidden name="orgid" value="00D3E0000008wXJ">
-<input type=hidden name="retURL" value="https://www.tagheuer.com">
+<!--input type=hidden name="retURL" value="https://www.tagheuer.com"-->
 <input type=hidden name="recordType" value="01257000000khAm">
 
 <!--  ----------------------------------------------------------------------  -->
