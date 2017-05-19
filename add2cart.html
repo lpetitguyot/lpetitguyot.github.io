@@ -15,6 +15,14 @@ function Add2Cart(sku){
 	return false;
 }
 
+function Buy(sku){
+	_etmc.push(["setOrgId", "7275555"]);       
+   _etmc.push(["trackConversion", { "cart": [
+	{"item" : sku, "quantity":  "1" , "price" : "1600" , "unique_id" : sku } , 
+   ]}]);
+	return false;
+}
+
 </script>
 
 </head>
@@ -22,4 +30,10 @@ function Add2Cart(sku){
 <META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
 
 <label for="SKU">SKU</label><input  id="SKU" maxlength="80" name="SKU" size="20" type="text" value="SAR8A80.FT6073"/><br>
-<button onclick="Add2Cart(document.getElementById('SKU').value)">Click me</button>
+
+<button onclick="Add2Cart(document.getElementById('SKU').value)">Add 2 Cart</button>
+
+<button onclick="Buy(document.getElementById('SKU').value)">Buy</button>
+
+-----------
+
