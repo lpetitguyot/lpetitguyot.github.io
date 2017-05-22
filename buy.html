@@ -16,7 +16,6 @@ function Buy(sku,email){
    alert(email);
    _etmc.push(["setUserInfo", {
     "email": email
-		}
 	}]);
 	_etmc.push(["trackPageView"]);
 	return false;
