@@ -7,14 +7,12 @@ _etmc.push(['setOrgId', '7275555']);
 
 _etmc.push(['trackPageView', { 'item' : 'partnerships-lifestyle', 'category' : 'Partnerships',  'subcategory' : 'Lifestyle' }]);
 
-function Buy(sku,email){
+function Buy(sku){
 	_etmc.push(["setOrgId", "7275555"]); 
    _etmc.push(["trackConversion", { "cart": [
 	{"item" : sku, "quantity":  "1" , "price" : "1600" , "unique_id" : sku } 
    ]}]);
-   _etmc.push(["setUserInfo", {
-    "email": Email
-	}]);
+ }
 
 	return false;
 }
@@ -25,7 +23,7 @@ function Buy(sku,email){
 
 <META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
 
-<label for="email">Email</label><input  id="email" maxlength="80" name="email" size="20" type="text" /><br>
+<!--label for="email">Email</label><input  id="email" maxlength="80" name="email" size="20" type="text" /><br-->
 
 <label for="SKU">SKU</label><input  id="SKU" maxlength="80" name="SKU" size="20" type="text" value="SAR8A80.FT6073"/><br>
 
