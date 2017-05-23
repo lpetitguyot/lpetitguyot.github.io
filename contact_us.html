@@ -11,25 +11,6 @@
 
 <br>
 
-<script type='text/javascript'>
-
-function User(Email){
-	_etmc.push(["setUserInfo", {
-    "email": Email,
-		"details": {
-			"Last name": "Petitguyot",
-			"First name": "Laurent",
-			"Email address": Email,
-			"Country": "France",
-			"Language": "FR",
-		}
-	}]);
-	_etmc.push(["trackPageView"]);
-	return false;
-}
-
-</script>
-
 </head>
 
 <!--  ----------------------------------------------------------------------  -->
@@ -50,7 +31,7 @@ function User(Email){
 	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	<!-- End Google Tag Manager (noscript) -->
 	
-<form action="https://cs83.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8" onsubmit=User(document.getElementById('email').value) method="POST">
+<form action="https://cs83.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8" method="POST">
 
 <input type=hidden name="orgid" value="00D3E0000008wXJ">
 <!--input type=hidden name="retURL" value="https://www.tagheuer.com"-->
