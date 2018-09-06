@@ -16,21 +16,20 @@
    <!-- Predictive Web Collect Code -->
    <script type="text/javascript" src="//7291498.collect.igodigital.com/collect.js"></script>
 
-<script type='text/javascript'>
-_etmc.push(['setOrgId', '7291498']);
+	<script type='text/javascript'>
+	_etmc.push(['setOrgId', '7291498']);
+	_etmc.push(['trackPageView', { 'category' : 'Purchase'}]);
 
-_etmc.push(['trackPageView', { 'category' : 'Purchase'}]);
-
-function Buy(sku){
+	function Buy(sku){
 	_etmc.push(["setOrgId", "7291498"]); 
    _etmc.push(["trackConversion", { "cart": [
 	{"item" : sku, "quantity":  "1" , "price" : "1600" , "unique_id" : sku } 
    ]}]);
    <!-- alert(sku);
    return false;
- }	
+	}	
 
-</script>
+	</script>
 
 </head>
 
