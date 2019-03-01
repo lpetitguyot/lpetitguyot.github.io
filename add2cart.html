@@ -28,6 +28,11 @@
 	</script>
 	
 	<script>
+	function ViewItem(sku){
+	_etmc.push(["setOrgId", "MID"]);
+	_etmc.push(["trackPageView", { "item" : sku }]);
+	};
+   
 	function Add2Cart(sku){
 	_etmc.push(["setOrgId", "7291498"]);       
 	_etmc.push(["trackCart", { "cart": [
@@ -43,6 +48,8 @@
 <META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
 
 <label for="SKU">SKU</label><input  id="SKU" maxlength="80" name="SKU" size="20" type="text" value="SAR8A80.FT6073"/><br>
+
+<button onclick="ViewItem(document.getElementById('SKU').value)">View Item</button><br>
 
 <button onclick="Add2Cart(document.getElementById('SKU').value)">Add 2 Cart</button><br>
 
