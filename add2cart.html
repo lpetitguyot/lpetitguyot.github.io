@@ -1,7 +1,38 @@
+<html>
 <head>
-<b>Haute Horlogerie</b>
-<br>
+<META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
+<style>
+.button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-family: verdana;
+  margin: 4px 2px;
+  cursor: pointer;
+}
 
+.button1 {
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-family: verdana;
+  margin: 4px 2px;
+}
+
+h1 {
+  font-size:2vw;
+  color: DodgerBlue;
+}
+</style>
 	<!-- Global Site Tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-100690845-2"></script>
 	<script>
@@ -45,14 +76,22 @@
 
 </head>
 
-<META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
 
-<label for="SKU">SKU</label><input  id="SKU" maxlength="80" name="SKU" size="20" type="text" value="SAR8A80.FT6073"/><br>
+<body>
 
-<button onclick="ViewItem(document.getElementById('SKU').value)">View Item</button><br>
+<h1>Haute Horlogerie</h1>
+<br>
 
-<button onclick="Add2Cart(document.getElementById('SKU').value)">Add 2 Cart</button><br>
+<label for="SKU" class = "button1">SKU</label><input  id="SKU" maxlength="80" name="SKU" size="20" type="text" value="SAR8A80.FT6073"/><br>
 
- <a href="http://lpetitguyot.github.io/buy.html">Buy</a><br>
+<button onclick="ViewItem(document.getElementById('SKU').value)" class="button">View Item</button><br>
+
+<button onclick="Add2Cart(document.getElementById('SKU').value)" class="button">Add 2 Cart</button><br>
+
+ <a href="http://lpetitguyot.github.io/buy.html" class="button">Buy</a><br>
+</body>
+</html>
+
+
 
 
