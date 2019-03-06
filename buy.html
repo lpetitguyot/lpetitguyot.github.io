@@ -1,6 +1,42 @@
-<b>Lifestyle</b>
-<br>
+<html>
+
 <head>
+
+<META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
+
+<style>
+.button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-family: verdana;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.button1 {
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-family: verdana;
+  margin: 4px 2px;
+}
+
+h1 {
+  font-size:2vw;
+  color: DodgerBlue;
+}
+</style>
+
 	<!-- Global Site Tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-100690845-2"></script>
 	<script>
@@ -33,13 +69,14 @@
 
 </head>
 
-<META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
+<h1>Lifestyle</h1>
+<br>
 
 <!--label for="email">Email</label><input  id="email" maxlength="80" name="email" size="20" type="text" /><br-->
 
-<label for="SKU">SKU</label><input  id="SKU" maxlength="80" name="SKU" size="20" type="text" value="SAR8A80.FT6073"/><br>
+<label for="SKU" class="button1">SKU</label><input  id="SKU" maxlength="80" name="SKU" size="20" type="text" value="SAR8A80.FT6073"/><br>
 
-<button onclick="Buy(document.getElementById('SKU').value)">Buy</button>
+<button onclick="Buy(document.getElementById('SKU').value)" class="button">Buy</button>
 
 
 
