@@ -1,0 +1,98 @@
+<html>
+
+<head>	
+	<title>Home Page</title>
+	
+	<!-- Predictive Web Collect Code -->
+	<script type="text/javascript" src="//7291498.collect.igodigital.com/collect.js"></script>
+	
+	<script>
+	_etmc.push(["setOrgId", "7291498"]);
+	_etmc.push(["trackPageView"]);		
+	</script>
+	
+	<script>
+	function SetEmail(Email){
+	_etmc.push(["setOrgId", "7291498"]);
+	_etmc.push(["setUserInfo", {"email": Email}]);
+	_etmc.push(["trackPageView"]);
+	};
+	</script>
+	
+	<script>
+	_etmc.push(["setOrgId", "7291498"]);
+	_etmc.push(["trackPageView", { "Category" : "Home" }]);
+	</script>
+
+	<script language="javascript">
+        //Set the number of days before your cookie should expire
+        var ExpireDays = 90;
+		//Do not change anything below this line
+        qstr = document.location.search;
+        qstr = qstr.substring(1, qstr.length);
+        function SetCookie(cookieName, cookieValue, nDays) {
+            var today = new Date();
+            var expire = new Date();
+            if (nDays == null || nDays == 0) nDays = 1;
+            expire.setTime(today.getTime() + 3600000 * 24 * nDays);
+            document.cookie = cookieName + "=" + escape(cookieValue) + "; expires=" + expire.toGMTString() + "; path=/";
+        }
+        thevars = qstr.split("&");
+        for (i = 0; i < thevars.length; i++) {
+            cookiecase = thevars[i].split("=");
+            switch (cookiecase[0]) {
+                case "sfmc_sub":
+                    sfmc_sub = cookiecase[1];
+                    SetCookie("SubscriberID", sfmc_sub, ExpireDays);
+                    break;
+                case "e":
+                    e = cookiecase[1];
+                    SetCookie("EmailAddr_", e, ExpireDays);
+                    break;
+                case "j":
+                    j = cookiecase[1];
+                    SetCookie("JobID", j, ExpireDays);
+                    break;
+                case "l":
+                    l = cookiecase[1];
+                    SetCookie("ListID", l, ExpireDays);
+                    break
+                case "jb":
+                    jb = cookiecase[1];
+                    SetCookie("BatchID", jb, ExpireDays);
+                    break;
+                case "u":
+                    u = cookiecase[1];
+                    SetCookie("UrlID", u, ExpireDays);
+                    break;
+                case "mid":
+                    mid = cookiecase[1];
+                    SetCookie("MemberID", mid, ExpireDays);
+                    break;
+                default:
+                    break;
+            }
+
+        }
+    </script>
+</head>
+<body>
+<h1>Hello Televerbier</h1>
+<br>
+
+	<label for="Email" class = "button1">Email</label><input  id="Email" maxlength="80" name="Email" size="30" type="text" value="lpetitguyot@wideagency"/>
+	<button class = "button" onclick="SetEmail(document.getElementById('Email').value)">Set Email</button><br>
+		
+	<a href="http://lpetitguyot.github.io/conversion.html" class="button">Conversion</a><br>
+	
+	<a href="http://lpetitguyot.github.io/add2cart.html" class="button">Add 2 Cart</a><br>
+	
+	<a href="http://lpetitguyot.github.io/buy.html" class="button">Buy</a><br>
+  
+	<div id="igdrec_1"></div>
+	
+	<script src="https://7291498.recs.igodigital.com/a/v2/7291498/home/recommend.js" type="text/javascript"></script>
+	
+	<script src="https://7291498.recs.igodigital.com/a/v2/7291498/home/recommend.js?item=SAR8A80.FT6060"></script>
+</body>
+</html>
