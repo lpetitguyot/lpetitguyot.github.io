@@ -72,7 +72,7 @@
    //Debug
    //document.write("<textarea rows=5 cols=80>");
       document.write("<img src='");
-      document.write("http://click.s7.exacttarget.com/conversion.aspx?xml=<system><system_name>tracking</system_name><action>conversion</action>");
+      document.write("http://click.exacttarget.com/conversion.aspx?xml=<system><system_name>tracking</system_name><action>conversion</action>");
       document.write("<member_id>" + memberid + "</member_id>");
       document.write("<job_id>" + jobid + "</job_id>");
       if (subid == undefined) {
@@ -95,7 +95,8 @@
       document.write("<data_set>" + dataset + "</data_set>");
       document.write("</system>'");
       document.write(" width='1' height='1'>");
-   //Debug //document.write("</textarea>");
+   //Debug 
+   document.write("</textarea>");
    
    _etmc.push(["setUserInfo", {
     "email": emailaddr
