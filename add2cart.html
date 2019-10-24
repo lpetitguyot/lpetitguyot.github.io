@@ -2,7 +2,7 @@
 <head>
 <META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
 
-<title>View Item and Add2Cart</title>
+<title>Add2Cart</title>
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-99770718-1"></script>
@@ -42,12 +42,24 @@
 }
 	</script-->
 
+	<script type='text/javascript'>
+	function ViewItem(sku){
+		alert("View Item : " + sku);
+		return false;		
+	};
+		   
+	function Add2Cart(sku){
+		alert("Add 2 Cart : " + sku);	
+		return false;
+	};
+	</script>
+
 </head>
 
 
 <body>
 
-<h1>View Item and Add2Cart</h1>
+<h1>Add2Cart</h1>
 <br>
 
 <label for="SKU" class = "button1">SKU</label><input  id="SKU" maxlength="80" name="SKU" size="20" type="text" value="SAR8A80.FT6073"/><br>
