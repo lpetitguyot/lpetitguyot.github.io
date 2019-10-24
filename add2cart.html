@@ -50,6 +50,12 @@
 
 	function Download(sku){
 		alert("Download : " + sku);
+		ga('send', {
+			hitType: 'event',
+			eventCategory: 'Trial',
+			eventAction: 'Click',
+			eventLabel: 'Download'
+		  });
 		return false;		
 	};
 
