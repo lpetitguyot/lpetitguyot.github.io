@@ -47,6 +47,12 @@
 		alert("View Item : " + sku);
 		return false;		
 	};
+
+	function Download(sku){
+		alert("Download : " + sku);
+		return false;		
+	};
+
 	</script>
 
 </head>
@@ -57,16 +63,11 @@
 <h1>Trial</h1>
 <br>
 
-<label for="SKU" class = "button1">SKU</label><input  id="SKU" maxlength="80" name="SKU" size="20" type="text" value="SAR8A80.FT6073"/><br>
-
+<label for="SKU" class = "button1">SKU</label><input  id="SKU" maxlength="80" name="SKU" size="20" type="text" value="SAR8A80.FT6073"/>
 <button onclick="ViewItem(document.getElementById('SKU').value)" class="button">View Item</button><br>
-
-<!-- button onclick="Add2Cart(document.getElementById('SKU').value)" class="button">Add 2 Cart</button><br-->
-
- <a href="http://lpetitguyot.github.io/buy.html">Download</a><br>
+<br>
+<button onclick="Download(document.getElementById('SKU').value)" class="button">Download</button><br>
+<br>
+<a href="http://lpetitguyot.github.io">Home</a><br>
 </body>
 </html>
-
-
-
-
